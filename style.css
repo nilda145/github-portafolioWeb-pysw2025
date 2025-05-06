@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+li {
+    list-style: none;
+    color: #ebe3e3;
+}
+
+nav.navbar {
+    background-color: #6A5ACD; /* Violeta suave */
+    z-index: 100;
+}
+
+.nav-link {
+    color: #FFFFFF; /* Blanco para el texto */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.nav-link:hover {
+    background-color: #dd9bbc; /* Rosa vibrante al pasar el mouse */
+    color: #FFFFFF; /* Mantiene el texto blanco */
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.navbar-toggler {
+    color: #FFF !important; /* Color blanco para el ícono del menú */
+    border: none !important;
+}
+
+.icono {
+    width: 8rem !important;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+/* Estilo para el logo */
+p.logo {
+    font-family: 'Caveat', cursive; /* Fuente cursiva */
+    color: #FFFFFF; /* Blanco */
+    font-size: 33px;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-style: italic;
+}
+
+p.logo:hover {
+    font-size: 35px;
+    text-shadow: 
+        0 0 5px rgba(255, 105, 180, 1), /* Rosa brillante */
+        0 0 10px rgba(255, 20, 147, 0.9), /* Rosa fuerte */
+        0 0 20px rgba(138, 43, 226, 0.7), /* Violeta */
+        0 0 40px rgba(75, 0, 130, 0.5), /* Índigo */
+        0 0 80px rgba(148, 0, 211, 0.3), /* Violeta intenso */
+        0 0 100px rgba(104, 2, 107, 0.2); /* Morado oscuro */
+    cursor: pointer;
+}
+/* Estilos adicionales */
+body {
+    background-color: #f8f8f8; /* Fondo claro para contraste */
+    color: #333; /* Color del texto principal */
+}
+
+.container {
+    padding: 20px;
+}
+
+/*Presentacio*/
+#jumbotron{
+    width: 100%;
+    height: 100vh !important;
+}
+#jumbotron .container{
+    height: 100%;
+    
+}
+#jumbotron h6{
+    letter-spacing: 2px;
+}
+
+#jumbotron .sosmed a{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    background-color: #f2e6ff; /* Lightest purple */
+    padding: 3rem 0;
+}
+
+#about .container {
+    max-width: 960px;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+#about h4 {
+    color: #663399; /* Darker purple */
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#about strong {
+    color: #555; /* Dark gray */
+}
+
+#about a {
+    color: #663399; /* Darker purple */
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e6ccff; /* Light purple */
+    padding: 4rem 0;
+}
+
+#skills .container {
+    max-width: 1200px;
+}
+
+#skills h2 {
+    color: #663399; /* Darker purple */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#skills .card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    background-color: #fff; /* White card background */
+}
+
+#skills .card:hover {
+    transform: translateY(-5px);
+}
+
+#skills .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#skills i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #663399; /* Darker purple */
+}
+
+#skills .card-title {
+    color: #663399; /* Darker purple */
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Experience Section */
+#experience {
+    background-color: #f2e6ff; /* Lightest purple */
+    padding: 3rem 0;
+}
+
+#experience .container {
+    max-width: 960px;
+}
+
+#experience h2 {
+    color: #663399; /* Darker purple */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#experience h3 {
+    color: #663399; /* Darker purple */
+    margin-bottom: 1.5rem;
+}
+
+#experience .list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#experience h4 {
+    color: #663399; /* Darker purple */
+    margin-bottom: 0.75rem;
+}
+
+#experience p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #424242;
+}
+
+#experience p:last-child {
+    margin-bottom: 0;
+}
+
+/* Education Section */
+#education {
+    background-color: #e6ccff; /* Light purple */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#education .section-heading {
+    font-size: 2.5rem;
+    color: #555; /* Dark grey */
+    margin-bottom: 3rem;
+}
+
+#education .education-card {
+    border: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background-color: #fff; /* White card background */
+}
+
+#education .education-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#education .card-title {
+    font-size: 1.5rem;
+    color: #663399; /* Darker purple */
+    margin-bottom: 0.75rem;
+}
+
+#education .card-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Learning Section */
+#learning {
+    background-color: #f2e6ff; /* Lightest purple */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#learning .section-heading {
+    font-size: 2.5rem;
+    color: #555; /* Dark grey */
+    margin-bottom: 3rem;
+}
+
+#learning .learning-card {
+    border: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background-color: #fff; /* White card background */
+}
+
+#learning .learning-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#learning .card-title {
+    font-size: 1.5rem;
+    color: #663399; /* Darker purple */
+    margin-bottom: 1rem;
+}
+
+#learning ul {
+    padding-left: 0;
+}
+
+#learning li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+#learning .bx-check-circle {
+    color: #28a745; /* Green checkmark color */
+}
+
+/* Contact Section */
+#contacto {
+    background-color: #e6ccff; /* Light purple */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#contacto .contact-card {
+    border: none;
+    border-radius: 10px;
+    background-color: #fff; /* White card background */
+}
+
+#contacto .card-title {
+    font-size: 2rem;
+    color: #555; /* Dark grey */
+    margin-bottom: 1.5rem;
+}
+
+#contacto .form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+#contacto .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+#contacto .form-control:focus {
+    border-color: #663399; /* Darker purple */
+    box-shadow: 0 0 0 0.2rem rgba(102, 51, 153, 0.25); /* Purple focus */
+}
+
+#contacto .btn-primary {
+    background-color: #663399; /* Darker purple */
+    border-color: #663399; /* Darker purple */
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+#contacto .btn-primary:hover {
+    background-color: #52297f; /* Darker purple hover */
+    border-color: #46246b;
+}
+
+#proyecto-tp2 {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 3rem 0;
+}
+
+#proyecto-tp2 .container {
+    max-width: 960px;
+}
+
+#proyecto-tp2 img {
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark gray */
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #663399; /* Darker purple */
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+footer .social-icons a {
+    margin-right: 0.5rem;
+}
+
+footer .social-icons a:hover {
+    color: #663399; /* Darker purple */
+}

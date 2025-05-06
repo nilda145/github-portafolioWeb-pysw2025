@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+.header img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+}
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.navbar a {
+    color: #777;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.navbar a:hover {
+    color: #007bff;
+}
+.reservas-section {
+    background-color: #e9ecef;
+    padding: 30px;
+}
+.buscar-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.form-label {
+    font-weight: bold;
+}
+.btn-buscar {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-buscar:hover {
+    background-color: #218838;
+}
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    margin-top: 30px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .header img {
+        max-width: 150px;
+    }
+    .navbar {
+        text-align: center;
+    }
+    .navbar a {
+        margin: 0 10px;
+    }
+}

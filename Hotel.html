@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="hotel-logo.png" alt="logo del hotel">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#rooms">Habitaciones</a></li>
+                <li><a href="#photos">Fotos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('active');
+        }
+    </script>
+    
+    <section id="home">
+        <img src="hotelCarlos.png" alt="Vista del hotel" class="hero-image">
+    </section>
+    
+    <section id="services">
+        <div class="section__Service">
+            <div class="section__tarjeta">
+            <img src="tarjetas1.png" alt=" tarjetas">
+            <img src="tarjetas2.png" alt="Texto">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vZQNwuLbICA?si=1hnhxB6d5e5pNtHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="section__contentt">
+                <div class="container">
+                    <div class="text">
+                        <p>Con muchos años de trayectoria en Villa Carlos Paz, 
+                            trabajamos para brindarte un servicio único, 
+                            con un entorno ideal para descasar y desconectar 
+                            de la rutina, rodeado de espacio verde, una hermosa
+                            piscina y la mejor vista a las sierras.
+                        </p><br>
+                        <p>Una ubicación privilegiada para recorrer todo el Valle de Punilla sin tener que cambiar de hospedaje. 
+                            A sólo 40 km de Córdoba Capital, nuestra ciudad se destaca por su especial clima serrano,
+                            donde es posible disfrutar de sus paisajes durante todo el año,
+                            sus balnearios naturales a la vera del río San Antonio y el dique San Roque.</p><br>
+                            <p>Contamos con un personal de trabajo joven, siempre dispuesto a dar lo mejor, 
+                            brindando una atención cálida y cuidadosa para que sus vacaciones sean 
+                            inolvidables, están listos?</p>
+                    </div>
+                    <div class="container">
+                        <h1>Servicios Disponibles</h1>
+                        <ul>
+                            <li>Desayuno</li>
+                            <li>Piscina y solarium</li>
+                            <li>Cocheras y estacionamiento</li>
+                            <li>WiFi en áreas públicas y en cada habitación</li>
+                            <li>Servicio de bebidas</li>
+                            <li>Sala de estar</li>
+                            <li>Vista a las sierras</li>
+                            <li>Traslados al aeropuerto (costo extra)</li>
+                            <li>Servicio de taxi (costo extra)</li>
+                            <li>Servicio diario de limpieza: ropa blanca, recambio de toallas y sábanas</li>
+                        </ul>
+                    </div>
+                    <div class="logos">
+                        <div class="texto2">Estamos adheridos a:</div>
+                        <img src="logos2.png" alt="">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+  <footer style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
+    <img src="servicios1.png" alt="Servicio 1" style="width: 100%; max-width: 500px; margin: 10px;">
+    <img src="servicios10.png" alt="Servicio 10" style="width: 100%; max-width: 500px; margin: 10px;">
+</footer>
+
+<style>
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas nuevas */
+}
+
+footer img {
+    width: 100%; /* Hace que la imagen sea responsiva */
+    max-width: 500px; /* Establece un tamaño máximo */
+    margin: 10px; /* Espaciado entre imágenes */
+}
+
+@media (max-width: 768px) {
+    footer img {
+        max-width: 100%; /* Imágenes ocupan todo el ancho en móviles */
+    }
+}
+</style>
+    </section>
+    
+    <section id="rooms">
+        <section id="habitaciones">
+            <div class="section">
+                <div class="image-container">
+                    <img src="habitaciones-1.png" alt="Habitación 1">
+                </div>
+                <div class="text-container">
+                    <h1>Habitaciones</h1>
+                    <p>Contamos con habitaciones dobles, triples, cuádruples y departamentos distribuidos en planta baja y planta alta, todas con acceso al parque, piscina y la mejor vista a las sierras.</p>
+                    <p>Aire acondicionado, calefacción, ventiladores, televisión LCD con cable, cámaras de seguridad.</p>
+                    <a href="#" class="btn">VER MÁS FOTOS</a>
+                </div>
+                <div class="image-container">
+                    <img src="habitaciones-2.png" alt="Habitación 2">
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <section id="photos">
+            <div class="section__container">
+                <h6>Galeria</h6>
+                <h2 class="section__title">Fotos del hotel</h2>
+                <div class="section__contentt">
+                    <!--BLOQUE CART-->
+    
+                
+                    <div class="gallery">
+                        <img src="hotel_1s.jpg" alt="Imagen del hotel 1" onclick="openModal(this.src)">
+                        <img src="hotel_2s.jpg" alt="Imagen del hotel 2" onclick="openModal(this.src)">
+                        <img src="hotel_3s.jpg" alt="Imagen del hotel 3" onclick="openModal(this.src)">
+                        <img src="hotel_4s.jpg" alt="Imagen del hotel 4" onclick="openModal(this.src)">
+                        <img src="hotel_5s.jpg" alt="Imagen del hotel 5" onclick="openModal(this.src)">
+                        <img src="hotel_6s.jpg" alt="Imagen del hotel 6" onclick="openModal(this.src)">
+                        <img src="hotel_7s.jpg" alt="Imagen del hotel 7" onclick="openModal(this.src)">
+                        <img src="hotel_8s.jpg" alt="Imagen del hotel 8" onclick="openModal(this.src)">
+                        <img src="hab_1s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_2s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_3s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_4.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_5s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_6s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_7s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hab_8s.jpg" alt="Imagen del habitacion1" onclick="openModal(this.src)">
+                        <img src="hotel_9s.jpg" alt="Imagen del hotel 9" onclick="openModal(this.src)">
+                        <img src="hotel_10.jpg" alt="Imagen del hotel 10" onclick="openModal(this.src)">
+                        <img src="hotel_11s.jpg" alt="Imagen del hotel 11" onclick="openModal(this.src)">
+                        <img src="hotel_12s.jpg" alt="Imagen del hotel 12" onclick="openModal(this.src)">
+                        <p><a href="https://www.booking.com">Booking.com</a> | <a href="https://www.friendly.com">Friendly.com</a></p>
+                    </div>
+                
+                    <div class="modal" id="myModal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <p><a href="https://www.booking.com">Booking.com</a> | <a href="https://www.friendly.com">Friendly.com</a></p>
+                    </div>
+                    <script>
+                        function openModal(src) {
+                            const modal = document.getElementById("myModal");
+                            const modalImage = document.getElementById("modalImage");
+                            modalImage.src = src;
+                            modal.style.display = "block";
+                        }
+                
+                        function closeModal() {
+                            const modal = document.getElementById("myModal");
+                            modal.style.display = "none";
+                        }
+                
+                        // Cerrar modal al hacer clic fuera de la imagen
+                        window.onclick = function(event) {
+                            const modal = document.getElementById("myModal");
+                            if (event.target === modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+    </section>
+    <section id="contact">
+        <div class="banner">
+            <h1>Reserva directamente con nosotros y evita comisiones</h1>
+            <div class="icons">
+                <div class="icon">
+                    <img src="marathon-01.png" alt="Calendario">
+                    <p>Elige la fecha</p>
+                    <p1>Seleccionás fecha de entrada y de salida</p1>
+                </div>
+                <div class="icon">
+                    <img src="marathon-02.png" alt="Cama">
+                    <p>Elige habitación</p>
+                    <p1>Buscas dentro de los resultados la habitación que te interese</p1>
+                </div>
+                <div class="icon">
+                    <img src="marathon-03.png" alt="Confirmación">
+                    <p>Confirma tu reserva</p>
+                    <p1>Concretás tu reserva completando unos datos</p1>
+                </div>
+                <div class="icon">
+                    <img src="marathon-04.png" alt="Pago">
+                    <p>Paga</p>
+                    <p1>Pagás con MercadoPago con tu tarjeta de crédito o débito</p1>
+                </div>
+            </div>
+            <button class="reserve-button">RESERVA AHORA</button>
+        </div>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13620.326079268194!2d-64.483463!3d-31.411880000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6619b38604a9%3A0xef1fefaab76afb76!2sHotel%20Carlos%20Paz!5e0!3m2!1ses-419!2sar!4v1745709902936!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    
+        <div class="container-formulario">
+            <div class="formulario">
+                <div class="header-formulario">
+                    <img src="hotel-logo.png" alt="Logo Hotel Carlos Paz" class="logo">
+                    <div class="contact-info">
+                        <p>(03341) 420 606</p>
+                        <p>Whatsapp: 3541 374100</p>
+                        <p>info@hotelcarlospaz.com.ar</p>
+                    </div>
+                </div>
+                <h1>Envíenos su mensaje o consulta</h1>
+                <form >
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="consulta">Consulta:</label>
+                    <input type="text" id="consulta" name="consulta" placeholder="-Consulta para-" required>
+                    
+                    <label for="date">Fecha llegada y salida:</label>
+                    <input type="text" id="date" name="date" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</head>
+<body>
+    <footer1>
+        <style>
+            .footer1 {
+                background-color: black; /* Fondo negro */
+                padding: 20px 0; /* Espaciado arriba y abajo */
+            }
+
+            .footer1 {
+                text-align: center; /* Centrar el texto */
+            }
+
+            .footer1 p {
+                color: yellow; /* Texto amarillo */
+                margin: 0; /* Eliminar margen por defecto */
+                font-size: 16px; /* Tamaño de fuente */
+            }
+        </style>
+        <div class="footer1">
+            <p>© 2023 Hotel Carlos Paz - Todos los derechos reservados</p>
+        </div>
+    </footer1>
+</body>
+</html>

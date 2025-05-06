@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="scrip.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--Bostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Boxicons  https://boxicons.com/ -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+
+    <link rel="shortcut icon" href="Usuario.png"  type="imagen/x-icon">
+
+    <title>Mi Potafolio</title>
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md navbar-darck fixed-top">
+        <a href="#" class="text-decoration-none">
+            <p class="logo">Bautista Nilda Adelma</p>
+        </a>
+        <i class="bx bx-menu navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></i>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link about" href="#about">Informacion Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link skills" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  Experience" href="#experience">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link education" href="#education">Educacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link learning" href="#learning">Aprendizaje</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link video" href="#video">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link proyecto" href="#proyecto-tp2">Sitio Web</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link contacto" href="#contacto">Contactame</a>
+              </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--Presentacion-->
+    <section id="jumbotron">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h6 class="text-uppercase fw-bold">HOLA</h6>
+        <h1>Te presento<span class="fw-bold">MI PORTAFOLIO</span></h1>
+        <h3>SOY UN <span class="text-primary typed"></span></h3>
+        <a href="#" target="_black" class="btn btn-primary mt-4 rounded-pill py-2 px-4">Descargar mi CVU</a>
+        <div class="sosmed d-flex flex-row mt-2 justify-content-between">
+            <a href="#" class="mx-2 rounder-circle btn btn-outline-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mx-2 rounder-circle btn btn-outline-warning"><i class="fab fa-envelope"></i></a>
+            <a href="#" class="mx-2 rounder-circle btn btn-outline-primary"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <!--Acerca de mi-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img loading="lazy" src="portafolio.png.jpg" class="img-fluid rounded-circle" alt="yo">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Información Personal</h4>
+                    <p>Hola, soy <strong>Bautista Adelma Nilda</strong>, tengo <strong>19 años</strong> y nací el
+                        <strong>26 de junio de 2004</strong>.</p>
+                    <p>Actualmente estudio en la <strong>Facultad de Ingeniería</strong> de la <strong>UNJU</strong>
+                        en La Quiaca, donde estoy cursando la carrera de <strong>Analista Programador
+                            Universitario</strong>.</p>
+                    <p>Me encuentro en mi <strong>tercer año</strong> de estudios y estoy muy entusiasmado por aprender
+                        y desarrollarme en el campo de la programación y el desarrollo web.</p>
+                    <p>Entre mis intereses se encuentran el desarrollo de aplicaciones web, el diseño de interfaces y
+                        la exploración de nuevas tecnologías. Me gusta trabajar con <strong>HTML</strong>,
+                        <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>Bootstrap</strong>.</p>
+                    <p>Si deseas contactarme, puedes hacerlo a través de mi correo electrónico:
+                        <strong><a href="mailto:nildabautista10@gmail.com">nildabautista10@gmail.com</a></strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Habilidades-->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">CONOCIMIENTO</h2>
+            <div class="row">
+                <!-- Skill Items (Example - Adjust as needed) -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-html5' style='color:#ff7402'></i>
+                            <h5 class="card-title">HTML</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-css3' style='color:#3fbbec'></i>
+                            <h5 class="card-title">CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-java' style='color:#9aeb65'></i>
+                            <h5 class="card-title">JAVA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-javascript' style='color:#d9ff02'></i>
+                            <h5 class="card-title">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-bootstrap' style='color:#770b81'></i>
+                            <h5 class="card-title">Bootstrap</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-typescript' style='color:#170580'></i>
+                            <h5 class="card-title">Typescript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-angular' style='color:#ff0202'></i>
+                            <h5 class="card-title">Angular</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-nodejs' style='color:#2a5f06'></i>
+                            <h5 class="card-title">NodeJS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-mongodb' style='color:#3b533b'></i>
+                            <h5 class="card-title">MongoDB</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-github' style='color:#000000'></i>
+                            <h5 class="card-title">GitHub</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-flutter' style='color:#87b5eb'></i>
+                            <h5 class="card-title">Flutter</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class='mb-2 fs-1 bx bxl-firebase' style='color:#eb9d0d'></i>
+                            <h5 class="card-title">FireBase</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Experiencia-->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Experiencia: Descripción de proyectos o experiencias laborales</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Proyectos Iniciales</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4>Sistema WEB de Comercio</h4>
+                            <p>Desarrollo de un sitio web de comercio electrónico: Participé en el desarrollo de un
+                                sitio web de comercio electrónico para una empresa minorista. Utilicé HTML y Bootstrap
+                                para crear una interfaz de usuario atractiva y receptiva. Implementé el diseño de la
+                                página de inicio, las páginas de productos, el carrito de compras y los formularios de
+                                pago. También apliqué prácticas de optimización de rendimiento para garantizar una carga
+                                rápida de la página.</p>
+                            <p>Tecnologías utilizadas: HTML, Bootstrap, JavaScript, CSS.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Diseño de una Pagina web para una Escuela</h4>
+                            <p>Diseño de una página de Asistencia: Participé en el diseño y desarrollo de una página de
+                                destino para una Pagina web de Asistencia. Utilicé HTML, CSS, JavaScript, Bootstrap,
+                                Base de Datos y Backend para crear una página atractiva y efectiva para la asistencia
+                                de los Alumnos . Implementé secciones con efectos visuales, como desplazamientos suaves
+                                y animaciones, para mejorar la experiencia del usuario. También aseguré que la página
+                                estuviera optimizada para dispositivos móviles.</p>
+                            <p>Tecnologías utilizadas: HTML, Bootstrap, Css, MySQL.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Educacion-->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-heading">Educación</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 education-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Universidad Facultad De Ingeniería-UNJU</h3>
+                            <p class="card-text"><strong>Título:</strong> Analista Programador Universitario</p>
+                            <p class="card-text"><strong>Período:</strong> 2024</p>
+                            <p class="card-text"><strong>Estado:</strong> Cursando</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 education-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Esc. Secundaria de Minas-La Quiaca-UNJU</h3>
+                            <p class="card-text"><strong>Título:</strong> Técnico en Informática</p>
+                            <p class="card-text"><strong>Período:</strong> 2017- 2022</p>
+                            <p class="card-text"><strong>Descripción:</strong> Durante mi educación secundaria en la Escuela
+                                de Minas, obtuve una sólida formación en matemáticas, tecnología e informática.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 education-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Esc. Primaria PADRE JESUS OLMEDO Nº463</h3>
+                            <p class="card-text"><strong>Título:</strong> Educación Primaria</p>
+                            <p class="card-text"><strong>Período:</strong> 2010 - 2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Metas de aprendizaje-->
+    <section id="learning" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-heading">Mis Metas de Aprendizaje</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 learning-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Programación</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="bx bx-check-circle me-2"></i> Aprender un lenguaje de programación como Python
+                                    o JavaScript.</li>
+                                <li><i class="bx bx-check-circle me-2"></i> Desarrollar habilidades en la resolución de
+                                    problemas algorítmicos.</li>
+                                <li><i class="bx bx-check-circle me-2"></i> Explorar diferentes paradigmas de programación,
+                                    como la programación orientada a objetos o la programación funcional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 learning-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Desarrollo Web</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="bx bx-check-circle me-2"></i> Aprender HTML, CSS y JavaScript para construir
+                                    sitios web interactivos.</li>
+                                <li><i class="bx bx-check-circle me-2"></i> Conocer frameworks populares como Bootstrap o
+                                    React.</li>
+                                <li><i class="bx bx-check-circle me-2"></i> Adquirir conocimientos en diseño web responsive y
+                                    accesibilidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--video-->
+    <section id="video" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">¿QUE ES UN DESARROLLADOR WEB?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="VideoWeb.mp4" type="video/mp4">
+                            Tu navegador no admite la etiqueta de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyecto-tp2" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sitio Web TP N° 2</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>La página está diseñada para ser visualmente atractiva, con un enfoque en la presentación de imágenes del hotel y sus instalaciones, lo que ayuda a captar la atención de los visitantes.</p>
+                    <p><strong>Características principales:</strong></p>
+                    <ul>
+                        <li>Información Detallada sobre Servicios: Se proporciona información clara sobre los servicios disponibles, incluyendo:
+
+                            Desayuno incluido.
+                            Piscina y solarium.
+                            Cocheras y estacionamiento.
+                            WiFi en áreas públicas y en cada habitación.
+                            Servicio de limpieza diario</li>
+                    </ul>
+                    <a href="Hotel.html" class="btn btn-primary" target="_blank">Ver Sitio Web</a>
+                </div>
+                <div class="col-md-6">
+                    <!-- Agrega una captura de pantalla del sitio web TP N° 2 -->
+                    <img src="tp2-pysw.png" alt="Captura de pantalla del sitio web TP N° 2" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contactame-->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow contact-card">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4 card-title">Contáctame</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5"
+                                        placeholder="Ingresa tu mensaje"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="#" class="fs-5 text-uppercase fw-bold text-decoration-none text-white">Índice</a>
+                </div>
+                <div class="col-md-6 text-md-end text-center">
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class='bx bxl-facebook-circle fs-4'></i></a>
+                        <a href="#" class="text-light me-2"><i class='bx bxl-twitter fs-4'></i></a>
+                        <a href="#" class="text-light me-2"><i class='bx bxl-linkedin-square fs-4'></i></a>
+                        <a href="#" class="text-light"><i class='bx bxl-github fs-4'></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="text-light mb-0">&copy; 2025 Desarrollador Web y Programador | La Quiaca | <a
+                            href="mailto:nildabautista10@gmail.com"
+                            class="text-light">nildabautista10@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.012"></script>
+    <script src="scrip.js"></script>
+</body>
+</html>
